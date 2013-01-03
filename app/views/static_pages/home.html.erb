@@ -1,11 +1,18 @@
 <% if user_signed_in? %>
 <h1> Welcome! </h1>
+<h2>
+<%= link_to "Investors", "#", class: "btn btn-large btn-primary" %>
+<%= link_to "Issuers/Broker-Dealers", "#", class: "btn btn-large btn-primary" %>
+</h2>
+
 <% else %>
 <div class="center hero-unit">
     <h1>Accredify</h1>
 
     <h2>
       Verifiying accredited investor status</h2>
+    <h2>  
+      Simplifying SEC requirements</h2>
 
     <%= link_to "Sign up now!", new_user_registration_path, 
                                 class: "btn btn-large btn-primary" %>
